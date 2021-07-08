@@ -28,9 +28,10 @@ st.title("""
          """
          )
 file= st.file_uploader("Please upload image", type=("jpg", "png"))
-#R = st.slider('R', min_value=0, max_value=255, step=1)
-#G = st.slider('G', min_value=0, max_value=255, step=1)
-#B = st.slider('B', min_value=0, max_value=255, step=1)
+M = np.float32([[1,  0, 0   ],
+                    [0, -1, rows],
+                    [0,  0, 1   ]])
+import cv2
 
 import cv2
 from  PIL import Image, ImageOps
