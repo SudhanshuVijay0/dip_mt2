@@ -41,9 +41,7 @@ def import_and_predict(image_data):
   #img_reshap= np.expand_dims(image, axis=0)
   #img_reshap = preprocess_input(img_reshap)
    
-  image_data = np.float32([[1,  0, 0   ],
-                    [0, -1, rows],
-                    [0,  0, 1   ]])
+  image_data = [M,0,0]
   st.image(image_data, use_column_width=True)
   return 0
 if file is None:
